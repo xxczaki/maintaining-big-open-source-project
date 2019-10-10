@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Prezentacja</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/atom-one-dark.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<script src="https://kit.fontawesome.com/45ca7f20a6.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<p>Zarządzanie Dużym Projektem Open-Source</p>
+				</section>
+				<section>
+					<img style="border-radius: 50%" src="https://imgur.com/LWUGIcj.png" width="196"/>
+					<p>Antoni Kępiński</p>
+					<p style="font-size: 24px"><i class="fab fa-github"></i> @xxczaki</p>
+					<p style="font-size: 24px"><i class="far fa-envelope"></i> a@kepinski.me</p>
+				</section>
+				<section>
+					<div style="padding-right: 5em; padding-bottom: 3em">
+						<img src="images/github.png"/>
+					</div>
+					<div style="padding-left: 5em">
+						<img src="images/npm.png"/>
+					</div>
+				</section>
+				<section>
+						<p>Komunikacja</p>
+				</section>
+				<section>
+					<div style="display: flex; flex-direction: row">
+						<div style="padding-right: 5em">
+								<img src="images/issues.png" width="500"/>
+						</div>
+						<div>
+								<img src="images/spectrum.png" width="450"/>
+						</div>
+					</div>
+					<div style="display: flex; flex-direction: row">
+							<div style="padding-right: 5em; padding-bottom: -5em">
+									<img src="images/slack.png" width="300"/>
+							</div>
+							<div>
+									<img src="images/discord.jpg" width="300"/>
+							</div>
+						</div>
+				</section>
+				<section>
+						<p>Role</p>
+				</section>
+				<section>
+						<p>Czy potrzebujemy organizacji?</p>
+						<div style="padding-right: 5em">
+								<img src="images/microsoft.png" width="500"/>
+						</div>
+						<div>
+								<img src="images/ava.png" width="400"/>
+						</div>
+				</section>
+				<section>
+						<p><b>Owners</b> vs <b>Members</b> vs <b>Billing managers</b></p>
+				</section>
+				<section>
+						<p>Finansowanie</p>
+				</section>
+				<section>
+						<div style="display: flex; flex-direction: row">
+							<div style="padding-right: 5em">
+									<img src="images/sponsors.png" width="800"/>
+							</div>
+							<div>
+									<img src="images/patreon.jpg" width="300"/>
+							</div>
+						</div>
+						<div style="display: flex; flex-direction: row">
+								<div style="padding-left: 5em">
+										<img src="images/open-collective.png" width="700"/>
+								</div>
+							</div>
+				</section>
+				<section>
+						<p>Kod</p>
+				</section>
+				<section>
+								<pre><code class="js" data-trim data-noescape data-line-numbers>
+									let value = 10
+
+									//function that multiplies value
+									function multiply_value(number) {
+									return value*2
+									}
+									export default multiply_value;
+								</code></pre>
+								<p>vs</p>
+										<pre><code class="js" data-trim data-noescape data-line-numbers>
+												const value = 10;
+
+												// Function that multiplies value
+												function multiplyValue(number) {
+													return value * 2;
+												}
+
+												export default multiply_value;
+										</code></pre>
+				</section>
+				<section>Inne</section>
+				<section>
+					<ul>
+						<li>Kodeks Postępowania (<q>Code of Conduct</q>)</li>
+						<li>Poradnik dla nowych kontrybutorów</li>
+						<li>Szablony do zgłaszania błędów (Issue templates)</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Koniec</h1>
+					<p style="font-size: 24px"><i class="far fa-envelope"></i> a@kepinski.me</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
